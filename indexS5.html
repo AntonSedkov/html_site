@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Сделать заказ</title>
+<meta http-equiv= "content-type" content = "text/html"; charset= "utf-8" />
+<meta name = "robots" content = "index, follow" />
+<meta name = "keywords" content = "Изготовление визиток" />
+<meta name = "description" content = "Вам нужны визитки? лучше посмотреть и сделать,
+чем постоянно смотреть. Наше фотоателье предлагает разработку визиток для каждого 
+клиента индивидуально. Приходите и получите вашу яркую визитку всего за 1 час;" />
+<link href = "iconDV.ico" rel = "shortcut icon" type = "image/x-icon" />
+<link href = "indexS.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body id = "page">
+	<div class = "form">
+		<form name = "order" method = "post" action = "send.php">
+			<ul>
+				<li>
+					<span>Введите ваше имя</span><br />
+					<input type="text" name="name" maxlength="25" size="25" required/>
+				</li>
+				<li>
+					<span>Введите ваш E-mail</span><br />
+					<input type="e-mail" name="email" maxlength="25" size="25" required/>
+				</li>
+				<li>
+					<span>Введите ваш телефон</span><br />
+					<input type="text" name="phone" maxlength="25" size="25" required/>
+				</li>				
+				<li>
+					<select name="service" multiple>
+						<option>Визитки</option>
+						<option>Буклеты</option>
+						<option>Листовки</option>
+						<option>Календари</option>
+					</select>
+				</li>				
+				<li>
+					<span>Введите количество</span><br />
+					<input type="text" name="sum" required/>
+				</li>				
+				<li>
+					<span>Нужен ли вам дизайн</span><br />
+					<input type="radio" name="design" value="Дизайн уже есть" />
+						<span>Нет, не нужен</span>
+					<input type="radio" name="design" value="Дизайн нужен" />
+						<span>Да, нужен</span>		
+				</li>
+				<li>
+					<span>Комментарии к заказу</span><br />
+					<textarea name="comment" rows="4" cols="25"></textarea>
+				</li>				
+				<li>
+					<input type="submit" value="Отправить" class="button" />
+				</li>		
+			</ul>
+		</form>
+	</div>
+	
+</body>
+
+</html>
